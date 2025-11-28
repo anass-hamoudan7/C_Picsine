@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
+/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 14:28:34 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/11/28 23:41:54 by ahamouda         ###   ########.fr       */
+/*   Created: 2025/08/17 11:17:49 by ahamouda          #+#    #+#             */
+/*   Updated: 2025/09/12 00:07:19 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+void	rush(int x, int y);
 
-int	ft_sqrt(int nb)
+int	main(void)
 {
-	int	i;
-
-	if (nb < 0)
-		return (0);
-	i = 1;
-	while (i * i <= nb)
-	{
-		if (i * i == nb)
-			return (i);
-		i++;
-	}
+	rush(5, 3);
+	rush(5, 1);
+	rush(1, 1);
+	rush(1, 5);
+	rush(4, 4);
 	return (0);
 }

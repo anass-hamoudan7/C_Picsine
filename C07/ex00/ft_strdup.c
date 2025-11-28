@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 14:28:34 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/11/28 23:41:54 by ahamouda         ###   ########.fr       */
+/*   Created: 2025/09/01 18:21:30 by ahamouda          #+#    #+#             */
+/*   Updated: 2025/11/28 23:39:37 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdlib.h>
 
-int	ft_sqrt(int nb)
+char	*ft_strdup(char *src)
 {
-	int	i;
+	int		i;
+	char	*str;
 
-	if (nb < 0)
-		return (0);
-	i = 1;
-	while (i * i <= nb)
+	i = 0;
+	while (src[i])
+		i++;
+	str = malloc(i + 1);
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (src[i])
 	{
-		if (i * i == nb)
-			return (i);
+		str[i] = src[i];
 		i++;
 	}
-	return (0);
+	str[i] = '\0';
+	return (str);
 }

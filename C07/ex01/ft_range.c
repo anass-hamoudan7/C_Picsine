@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 14:28:34 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/11/28 23:41:54 by ahamouda         ###   ########.fr       */
+/*   Created: 2025/09/01 18:23:07 by ahamouda          #+#    #+#             */
+/*   Updated: 2025/11/28 23:39:50 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdlib.h>
 
-int	ft_sqrt(int nb)
+int	*ft_range(int min, int max)
 {
 	int	i;
+	int	size;
+	int	*arr;
+	int	*ptr;
 
-	if (nb < 0)
+	if (min >= max)
 		return (0);
-	i = 1;
-	while (i * i <= nb)
+	size = max - min;
+	arr = malloc(size * sizeof(int));
+	if (!arr)
+		return (0);
+	ptr = arr;
+	i = min;
+	while (i < max)
 	{
-		if (i * i == nb)
-			return (i);
+		*ptr = i;
+		ptr++;
 		i++;
 	}
-	return (0);
+	return (arr);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 20:00:35 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/09/12 00:05:58 by ahamouda         ###   ########.fr       */
+/*   Updated: 2025/11/28 23:48:05 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	j;
-	int	k;
+	int		i;
+	int		j;
+	int		k;
 	char	*temp;
 
 	i = 1;

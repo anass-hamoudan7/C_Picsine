@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:41:04 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/08/24 12:45:47 by ahamouda         ###   ########.fr       */
+/*   Updated: 2025/11/28 23:43:43 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
-/*
-int	main()
-{
-	char str[] = "Hjg Anass Hn";
-	char to_find[] = "Anass";
-
-	printf("%s", ft_strstr(str, to_find));
-}*/

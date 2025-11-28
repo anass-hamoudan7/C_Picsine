@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 14:29:12 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/09/12 00:09:59 by ahamouda         ###   ########.fr       */
+/*   Updated: 2025/11/28 23:42:03 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-/*
-int	main()
-{
-	printf("%d\n", ft_is_prime(13));
-	printf("%d\n", ft_is_prime(6));
-	printf("%d\n", ft_is_prime(1));
-	printf("%d\n", ft_is_prime(0));
-	printf("%d\n", ft_is_prime(37));
-	printf("%d\n", ft_is_prime(2));
-}*/

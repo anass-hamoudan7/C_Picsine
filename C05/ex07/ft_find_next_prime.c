@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 14:31:02 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/08/29 10:18:18 by ahamouda         ###   ########.fr       */
+/*   Updated: 2025/11/28 23:42:13 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,3 @@ int	ft_find_next_prime(int nb)
 		nb++;
 	return (nb);
 }
-/*
-int	main()
-{
-	printf("%d\n", ft_find_next_prime(0));
-}*/

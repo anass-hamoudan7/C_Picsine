@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahamouda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahamouda <ahamouda.student@42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 14:52:15 by ahamouda          #+#    #+#             */
-/*   Updated: 2025/09/12 00:11:14 by ahamouda         ###   ########.fr       */
+/*   Updated: 2025/11/28 23:43:56 by ahamouda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,17 +35,3 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[dl + i] = '\0';
 	return (dl + sl);
 }
-/*
-int	main(void)
-{
-	char dest[20] = "Hello, ";
-	char src[] = "World!";
-	int size;
-	int result;
-
-	size = 15;
-	result = ft_strlcat(dest, src, size);
-	printf("%s\n", dest);
-	printf("%d\n", result);
-	return (0);
-}*/
