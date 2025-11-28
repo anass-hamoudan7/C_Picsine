@@ -10,15 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include "ft_point.h"
 
-# include <unistd.h>
+void	set_point(t_point *point)
+{
+	point->x = 42;
+	point->y = 21;
+}
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_strcmp(char *s1, char *s2);
+int	main(void)
+{
+	t_point	point;
 
-#endif
+	set_point(&point);
+	return (0);
+}

@@ -10,15 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include "ft.h"
 
-# include <unistd.h>
+int	ft_strlen(char *str)
+{
+	int	len;
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_strcmp(char *s1, char *s2);
-
-#endif
+	len = 0;
+	while (*(str + len) != '\0')
+		len++;
+	return (len);
+}
